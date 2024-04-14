@@ -86,7 +86,7 @@
         <div class="rounded bg-dark m-1 p-2">
           <span class="text-light"><img src="logo_scb.png" alt="" width="100">PromtPay ไทยพาณิชย์</span>
           <div class="row p-2 g-3">
-            <div>
+            <div id="handleimage">
               <img src="qrscb1.jpg" class="text-center" width="300"/>
             </div>
           </div>
@@ -95,6 +95,12 @@
     </div>
   </div>
   <script>
+    $(document).ready(()=>{
+      $("#handleimage").hide()
+    })
+     $("#handleimage").click(()=>{
+       $("#handleimage").show()
+     })
     var toastElList = [].slice.call(document.querySelectorAll('.toast'))
     var toastList = toastElList.map(function (toastEl) {
       return new bootstrap.Toast(toastEl, {
