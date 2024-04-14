@@ -127,14 +127,14 @@
 
 
     $(document).ready(() => {
-      let x = promptpayQr('0904017402', {amount: 0})
+      let x = promptpayQr('0952508587', {amount: 0})
       $('#promptpay-qr-img').attr('src', 'https://chart.googleapis.com/chart?chs=300x300&cht=qr&chl=' + x + '&choe=UTF-8')
       $('#amount').on('input', () => {
         if ($('#amount').val() == '') {
           $('#amount').val(0)
         }
 
-        let x = promptpayQr('0904017402', {amount: Number($('#amount').val())})
+        let x = promptpayQr('0952508587', {amount: Number($('#amount').val())})
         $('#promptpay-qr-img').attr('src', 'https://chart.googleapis.com/chart?chs=300x300&cht=qr&chl=' + x + '&choe=UTF-8')
       })
 
