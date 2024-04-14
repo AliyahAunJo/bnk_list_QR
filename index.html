@@ -4,15 +4,15 @@
   
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="./jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+  <script src="jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
   <!-- CSS only -->
-  <link href="./bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link href="bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
   <!-- JavaScript Bundle with Popper -->
-  <script src="./bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="./all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous">
+  <script src="bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous">
   <link rel="preconnect" href="https://fonts.gstatic.com/">
-  <link href="./css2" rel="stylesheet">
-  <script charset="utf-8" src="./sdk.js"></script>
+  <link href="css2" rel="stylesheet">
+  <script charset="utf-8" src="sdk.js"></script>
   <title>เลขบัญชี</title>
   <style>
     body {
@@ -53,7 +53,7 @@
       <div class="row justify-content-center m-3">
         <div class="col align-middle text-center col-md-5 textbox m-1">
           <div class="m-3">
-            <img src="./เลขบัญชี_files/scb.png" alt="" height="100vw">
+            <img src="scb.png" alt="" height="100vw">
             <p class="text-sm-center text-white mt-2">ไทยพาณิชย์</p>
             <p class="text-lg-center text-white mt-2"><strong id="bankNo">4251815236</strong></p>
             <button class="btn mt-3" onclick="copy(&#39;bank&#39;)">
@@ -65,7 +65,7 @@
         </div>
         <div class="col align-middle text-center col-md-5 textbox m-1">
           <div class="m-3">
-            <img src="./เลขบัญชี_files/logo_krungthep.png" alt="" height="100vh">
+            <img src="logo_krungthep.png" alt="" height="100vh">
             <p class="text-sm-center text-white mt-2">กรุงเทพ</p>
             <p class="text-lg-center text-white mt-2"><strong id="walletNo">3294442656</strong></p>
             <button class="btn mt-3" onclick="copy(&#39;wallet&#39;)">
@@ -84,13 +84,13 @@
     <div class="row justify-content-center mb-5">
       <div class="col-12 align-middle text-center">
         <div class="rounded bg-dark m-2 p-2">
-          <span class="text-light"><img src="./เลขบัญชี_files/icon-thaiqr.png" alt="" width="100">สแกนจ่าย QRcode</span>
+          <span class="text-light"><img src="icon-thaiqr.png" alt="" width="100">สแกนจ่าย QRcode</span>
           <div class="row p-2 g-3">
             <div class="col-12">
               <input type="number" inputmode="numeric" id="amount" min="0" step="1" class="form-control text-center bg-dark text-light shadow-none" placeholder="ระบุจำนวนเงิน">
             </div>
             <div class="col-12">
-              <img crossorigin="anonymous" src="./เลขบัญชี_files/chart" alt="" id="promptpay-qr-img" class="img-fluid rounded">
+              <img crossorigin="anonymous" src="chart" alt="" id="promptpay-qr-img" class="img-fluid rounded">
             </div>
             <div class="col-12">
               <button class="btn btn-warning" id="save-img">บันทึกภาพ QRcode</button>
@@ -156,7 +156,7 @@
     })
     var promptpayQr
   </script>
-  <script src="./เลขบัญชี_files/sweetalert2@11"></script>
+  <script src="sweetalert2@11"></script>
 
   <script type="module">
     import promptpayQr from 'https://cdn.jsdelivr.net/npm/promptpay-qr@0.5.0/+esm'
